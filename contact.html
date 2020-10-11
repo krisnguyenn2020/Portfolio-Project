@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-custom navbar-fixed-top">
+            <a class="navbar-brand" href="home.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>    
+                <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                </li>  
+                <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                </li>  
+            </ul>
+            </div>  
+        </nav>
+<br>
+
+
+    <section class="contact" id="contact">
+            <div class="container">
+                    <form action="addDB.php" method="post">
+                        <fieldset class="form-group">
+                            <legend><h2><strong>Contact Me</strong></h2> </legend> <hr>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <label for="fname" id="fname">First Name: </label>
+                                    <input class="form-control" type="text" name="fname" id="#"> <br>
+                                </div>
+                                <div class="col-lg-5">
+                                        <label for="lname" id="lname">Last Name: </label>
+                                        <input class="form-control" type="text" name="lname" id="#"> <br>
+                                    </div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <label for="email" id="email">Email:</label>
+                                    <input class="form-control" type="text" name="email" id="#"> <br>
+                                </div>
+                            </div>
+                            <label>Today is: <input class="form-control" name="day" id="txtList" type="text" size="25" placeholder="Select a day of the week" list="day"></label>
+                            <datalist id="day">
+                                <option value="Monday">
+                                <option value="Tuesday">
+                                <option value="Wednesday">
+                                <option value="Thursday">
+                                <option value="Friday">
+                                <option value="Sartuday">
+                                <option value="Sunday">
+                            </datalist>        
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <label>How would you rate our site?</label> <select class="form-control" name="rating">
+
+                                            <option value="#">-Choose One-</option>
+                                            <option value="Excellent">Excellent</option>
+                                            <option value="Good">Good</option>
+                                            <option value="Fair">Fair</option>
+                                            <option value="Poor">Poor</option>
+                                            <option value="Terible">Terible</option>
+                                        </select>
+                                        <br>   
+                                </div>
+                            </div>
+                            
+                            <label for="comments">Comments?</label><br>
+                            <textarea name="comments" id="" cols="40" rows="7"></textarea>
+                            
+                            <br>
+                            <label>Would you like to be on our mailing list</label>
+                            <br>
+                            <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="mailing" value="Yes"> Yes<br>
+                                    <input class="form-check-input" type="radio" name="mailing" value="No"> No<br>
+                                    <input class="form-check-input" type="radio" name="mailing" id="" value="Don't Care"> Don't Care <br>
+                                    <br>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <label for="comment">Comments:</label>
+                                    <textarea class="form-control " name="comment" id="" cols="40" rows="10"></textarea> <br>
+                                </div>
+                            </div>
+            
+                            <input class="btn btn-primary" type="submit" name ="submit" value="Submit">
+                            <input class="btn btn-primary" type="reset" value="Reset">
+                            <hr>                           
+                        </fieldset>
+                    </form>
+            
+                </div>
+
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer">
+            <p class="disclaimer">The disclaimer will state that “this website is developed as an educational project”. 
+            If any copyrighted materials are included in
+                accordance to the multimedia fair use guidelines, 
+            a notice should be added and states that “certain materials are
+                included under the fair use exemption of the U.S. Copyright Law and have been prepared according to 
+            the multimedia fair
+                use guidelines and are restricted from further use”.</p>
+            <a href="mailto:knguye88@gmu.edu" class="footer__link">knguyen88@gmu.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="#" class="social-list__link"a><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+    </footer>
+</body>
+</html>
+
+
