@@ -46,9 +46,19 @@ body {
 p.short-bio {
     justify-content: center;
 }
+
+section.project h1 {
+    margin-bottom: 1.5em;
+}
 section, section.about-me {
-    padding: 20em 15em;
-    
+    padding: 16em 15em;
+}
+section.project {
+    text-align: center;
+    padding: 14em 15em;
+}
+div.container .btn {
+    margin-top: 5em;
 }
 section.contact {
     padding: 5em 5em;
@@ -119,8 +129,15 @@ strong {
 .section__subtitle--intro {
     display: inline-block;
 }
-
-
+.btn {
+    font-family: var(--ff-secondary);
+    background: transparent;
+    border: 1.5px solid var(--clr-dark);
+}
+.btn-modify:hover {
+    color: var(--clr-light);
+    background: var(--clr-dark);
+  }
   
 .intro {
     margin: 0 auto;
@@ -135,6 +152,31 @@ strong {
     display: inline-block;
 }
 
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        grid-column-gap: 1em;
+        width: min-content;
+        margin: 0 auto;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro__img {
+        grid-area: img;
+        min-width: 350px;
+        position: relative;
+        z-index: 2;
+    }
+    .bio__img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+        padding-right: 3em;
+    }
+}
 
 .footer {
     background: #111;
