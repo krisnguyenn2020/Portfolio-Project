@@ -129,7 +129,7 @@ strong {
 .section__subtitle--intro {
     display: inline-block;
 }
-div.container .btn {
+.btn-modify {
     font-family: var(--ff-secondary);
     background: transparent;
     border: 1.5px solid var(--clr-dark);
